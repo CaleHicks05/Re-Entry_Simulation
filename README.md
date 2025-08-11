@@ -32,4 +32,4 @@ This project simulates atmospheric re-entry of a spacecraft using MATLAB, accoun
 **For MATLAB:**
 ```matlab
 % Open the .m file in MATLAB and run:
-reentry_simulation
+atmospheric_reentry_sim
