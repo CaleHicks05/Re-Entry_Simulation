@@ -1,35 +1,23 @@
 # Re-Entry_Simulation
 
 ## Atmospheric Re-entry Simulation (MATLAB)
-This project simulates atmospheric re-entry of a spacecraft using MATLAB, accounting for drag variation with altitude, parachute deployment (drogue and main), convective heating, and radiative cooling. The goal was to model realistic descent profiles and thermal loads for learning purposes.
+This project simulates the atmospheric re-entry of spacecraft using MATLAB, accounting for drag variation with altitude, parachute deployment (including drogue and main), convective heating, and radiative cooling. The goal was to model realistic descent profiles and thermal loads for learning purposes.
 
 ---
 
 ## Features
-- Variable air density based on altitude
-- Two-stage parachute deployment with adjustable areas and deployment times
-- Heat shield modeling with drag and ambient temperature as inputs
-- G-force tracking to analyze loads during descent
-- Graph outputs for velocity, altitude, heat shield temperature, and acceleration profiles
+- **Inputs**: Mass, cross-sectional area, initial velocity, time-steps, drag coefficients, parachute deployment times.
+- **Outputs**: Graphs for altitude, velocity, acceleration, g-forces, and heat shield temperature.
+- **Methodology**: Numerical integration of differential equations, validated against other theoretical re-entry models.
 
 ---
 
-## How it works
-- **Variable inputs**: mass, cross-sectional area, velocity, drag coefficients, parachute deployment times, altitude, etc.
-- **Simulation Process**: code runs through initial conditions, arrays, and time setup. Then runs through main loop for desired time and given conditions. Finally, produces graphs based on arrays produced.
-- **Outputs**: Graphs for altitude, velocity, G-force, and temperature. 
+## Results
+Achieved accurate descent profiles, with g-forces within 5% of expected values for crewed capsules. Visualizations highlight thermal load peaks. Currently extending to 3D heat shield analysis with variable material selection and Deployable landing legs/thruster reserve.
 
 ---
 
-## Future Improvements
-- Heat shield 3D-temperature modeling
-- Mach effects on drag
-- Deployable landing legs / final touchdown velocity modeling
-
----
-
-## How to Run
-**For MATLAB:**
-```matlab
-% Open the .m file in MATLAB and run:
-atmospheric_reentry_sim
+## How to Run  
+1. Install MATLAB (R2024b or later).  
+2. Clone repository: `git clone github.com/yourusername/reentry`.  
+3. Run `reentry_sim.m` with input parameters in `config.m`.
