@@ -1,6 +1,6 @@
-# Re-Entry_Simulation
+# Atmospheric Re-entry Simulation (MATLAB)
 
-## Atmospheric Re-entry Simulation (MATLAB)
+## Overview
 This project simulates the atmospheric re-entry of spacecraft using MATLAB, accounting for drag variation with altitude, parachute deployment (including drogue and main), convective heating, and radiative cooling. The goal was to model realistic descent profiles and thermal loads for learning purposes.
 
 ---
