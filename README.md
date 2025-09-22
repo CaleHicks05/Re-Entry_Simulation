@@ -19,5 +19,5 @@ Achieved accurate descent profiles, with g-forces within 5% of expected values f
 
 ## How to Run  
 1. Install MATLAB (R2024b or later).  
-2. Clone repository: `git clone github.com/yourusername/reentry`.  
-3. Run `reentry_sim.m` with input parameters in `config.m`.
+2. Clone repository: `git clone github.com/CaleHicks05/Re-Entry_Simulation`.  
+3. Run `atmospheric_reentry_sim.m` with input parameters in `config.m`.
